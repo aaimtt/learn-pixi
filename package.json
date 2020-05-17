@@ -1,0 +1,44 @@
+{
+    "name": "learn-pixi",
+    "version": "1.0.0",
+    "description": "Simple project to learn Pixi.js",
+    "main": "index.html",
+    "dependencies": {
+        "@types/pixi.js": "^4.5.5",
+        "pixi.js": "^4.5.5"
+    },
+    "devDependencies": {
+        "husky": "^4.2.5",
+        "lint-staged": "^10.2.2",
+        "prettier": "2.0.5",
+        "typescript": "^3.9.2"
+    },
+    "scripts": {
+        "dev": "parcel index.html",
+        "build": "parcel build index.html",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "format": "prettier . --write"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/aaimtt/learn-pixi.git"
+    },
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/aaimtt/learn-pixi/issues"
+    },
+    "homepage": "https://github.com/aaimtt/learn-pixi#readme",
+    "keywords": [
+        "typescript",
+        "javascript"
+    ],
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{js,ts,html,css,md,json}": "prettier --write"
+    }
+}

@@ -1,2 +1,3 @@
 # learn-pixi
-Simple project to learn pixi.js
+
+Simple project to learn Pixi.js
